@@ -1,5 +1,13 @@
 # IP2F
 
+ Title: Wait For Drive Example
+ 
+ Author: emptythevoid
+ 
+Link: https://github.com/emptythevoid/flipperzero/blob/main/badusb/read-from-flipper-disk-image/wait-for-drive-example.txt
+
+Edited and Updated to Suit by Skrimbo_Jones
+
 This will make a file named IP_ADDRESS_[CURRENTUSER].txt containing the Pulbic IP and active username of the device connected to. It will wait until you open the Mass Storage app on the 
  Flipper Zero and open an .img file with the name, "MAXUS".
  It then moves the IP_ADDRESS_[CURRENTUSER].txt to the drive and deletes it from the system.
