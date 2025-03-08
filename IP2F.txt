@@ -14,7 +14,7 @@ DELAY 3000
 STRING curl ifcfg.me > "C:\Users\%username%\Documents\IP_ADDRESS_%username%.txt"
 ENTER
 DELAY 500
-STRING echo ___________________________ >> "C:\Users\%username%\Documents\IP_ADDRESS_%username%.txt"
+STRING echo " " >> "C:\Users\%username%\Documents\IP_ADDRESS_%username%.txt"
 ENTER
 DELAY 500
 STRING echo %username% >> "C:\Users\%username%\Documents\IP_ADDRESS_%username%.txt"
