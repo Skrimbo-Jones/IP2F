@@ -6,7 +6,6 @@ Flipper Zero and open an .img file with the name, "MAXUS".
 It then moves the IP_ADDRESS_[CURRENTUSER].txt to the drive and deletes it from the system.
 The name can be changed to whatever you like by using CTRL+F to replace MAXUS in the program itself. Just be sure it matches in the documents window once the drive is loaded.
 NOTE: You switch to the Mass Storage app once the BadKB script reads 100%.
-~Skrimbo_Jones
 
 Portion Of Code Authored By: emptythevoid
 
